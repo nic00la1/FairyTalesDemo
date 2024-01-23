@@ -10,6 +10,18 @@
                TextColor="White"
                Text="Fairy Tales"
                VerticalOptions="Center"/>
+
+        <Grid Grid.Row="1" Margin="25, 10, 25,10">
+            <RoundRectangle CornerRadius="25"
+                            Fill="#311B45"
+                            HeightRequest="45"/>
+            
+            <SearchBar CancelButtonColor="White"
+                       Placeholder="Search by name"
+                       PlaceholderColor="#ac9db9"
+                       TextColor="White"
+                       VerticalOptions="Center"/>
+        </Grid>
     </Grid>
 
 </ContentPage>
