@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FairyTalesDemo.MainPage">
 
- 
+    <Grid BackgroundColor="#0D0118" 
+          RowDefinitions=".05*, .1*, .45*, .05*, .05*, .3*">
+        <Label FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="White"
+               Text="Fairy Tales"
+               VerticalOptions="Center"/>
+    </Grid>
 
 </ContentPage>
