@@ -22,8 +22,27 @@
                        TextColor="White"
                        VerticalOptions="Center"/>
         </Grid>
-        
-        
+
+        <CarouselView Grid.Row="2"
+                      ItemsSource="{Binding FairyTales}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions=".2*, .6*, .2*">
+                        <Border 
+                            Grid.RowSpan="3"
+                            BackgroundColor="#311b45"
+                            HeightRequest="300"
+                            Stroke="#6e557c"
+                            StrokeShape="RoundRectangle 30,30,30,30"
+                            StrokeThickness="2"
+                            WidthRequest="300">
+                            <Image Aspect="AspectFill"
+                                   Source="{Binding Image}"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
     </Grid>
 
 </ContentPage>
