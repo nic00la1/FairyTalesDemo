@@ -47,6 +47,14 @@
                                            Text="{Binding Name}"
                                            TextColor="White"/>
                                 </VerticalStackLayout>
+                                <Label 
+                                    Margin="0,20,20,0"
+                                    FontFamily="Icons"
+                                    FontSize="25"
+                                    HorizontalOptions="End"
+                                    Text="&#xF097;"
+                                    TextColor="White"/>
+
                             </Grid>
                             <Border.Shadow>
                                 <Shadow
