@@ -38,6 +38,13 @@
                             WidthRequest="300">
                             <Image Aspect="AspectFill"
                                    Source="{Binding Image}"/>
+                            <Border.Shadow>
+                                <Shadow
+                                    Brush="#c283fd"
+                                    Opacity=".7"
+                                    Radius="100"
+                                    Offset="0,0"/>
+                            </Border.Shadow>
                         </Border>
                     </Grid>
                 </DataTemplate>
