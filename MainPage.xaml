@@ -27,7 +27,7 @@
                       ItemsSource="{Binding FairyTales}">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Grid RowDefinitions=".2*, .6*, .2*">
+                    <Grid >
                         <Border 
                             Grid.RowSpan="3"
                             BackgroundColor="#311b45"
@@ -36,8 +36,18 @@
                             StrokeShape="RoundRectangle 30,30,30,30"
                             StrokeThickness="2"
                             WidthRequest="300">
-                            <Image Aspect="AspectFill"
-                                   Source="{Binding Image}"/>
+                            <Grid RowDefinitions=".2*, .6*, .2*">
+                                <Image Aspect="AspectFill"
+                                       Source="{Binding Image}"
+                                       Grid.RowSpan="3"/>
+                                <VerticalStackLayout Grid.Row="2" Margin="20,0,0,0">
+                                    <Label Text="{Binding ReadTime, StringFormat='Read Time: {0:%m} mins'}"
+                                           TextColor="White"/>
+                                    <Label FontSize="Medium"
+                                           Text="{Binding Name}"
+                                           TextColor="White"/>
+                                </VerticalStackLayout>
+                            </Grid>
                             <Border.Shadow>
                                 <Shadow
                                     Brush="#c283fd"
@@ -46,6 +56,9 @@
                                     Offset="0,0"/>
                             </Border.Shadow>
                         </Border>
+
+                        
+                        
                     </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
