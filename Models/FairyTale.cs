@@ -1,6 +1,6 @@
 ﻿namespace FairyTalesDemo.Models
 {
-    internal class FairyTale
+    public class FairyTale
     {
         public string Name { get; set; }
         public TimeSpan ReadTime { get; set; }
