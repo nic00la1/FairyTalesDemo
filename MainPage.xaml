@@ -105,6 +105,13 @@
                        VerticalOptions="Center">
             
         </IndicatorView>
+
+        <Label Grid.Row="4"
+               Margin="25,10,25,10"
+               FontSize="16"
+               VerticalOptions="Center"
+               TextColor="White"
+               Text="Recommended for you"/>
     </Grid>
 
 </ContentPage>
