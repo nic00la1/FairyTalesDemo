@@ -24,7 +24,16 @@
         </Grid>
 
         <CarouselView Grid.Row="2"
-                      ItemsSource="{Binding FairyTales}">
+                      ItemsSource="{Binding FairyTales}"
+                      PeekAreaInsets="30">
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="0"
+                                   Orientation="Horizontal"
+                                   SnapPointsAlignment="Center"
+                                   SnapPointsType="MandatorySingle"/>
+
+            </CarouselView.ItemsLayout>
+            
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Grid >
