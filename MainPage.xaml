@@ -135,6 +135,19 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <Grid Grid.Row="5"
+              Margin="15,0,15,0"
+              HeightRequest="75"
+              VerticalOptions="End">
+            <Border BackgroundColor="#311b45"
+                    StrokeShape="RoundRectangle 30,30,30,30"
+                    StrokeThickness="2"
+                    Stroke="#6e557c">
+                
+            </Border>
+                    
+        </Grid>
     </Grid>
 
 </ContentPage>
