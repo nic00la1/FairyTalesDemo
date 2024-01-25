@@ -49,6 +49,20 @@
                                 <Image Aspect="AspectFill"
                                        Source="{Binding Image}"
                                        Grid.RowSpan="3"/>
+
+                                <RoundRectangle Grid.RowSpan="3"
+                                                CornerRadius="30"
+                                                HeightRequest="300"
+                                                WidthRequest="300"
+                                                Opacity=".7">
+                                    <RoundRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0, 1">
+                                            <GradientStop Offset="0" Color="Transparent"></GradientStop>
+                                            <GradientStop Offset="1" Color="#030005"></GradientStop>
+                                        </LinearGradientBrush>
+                                    </RoundRectangle.Fill>
+                                </RoundRectangle>
+                                
                                 <VerticalStackLayout Grid.Row="2" Margin="20,0,0,0">
                                     <Label Text="{Binding ReadTime, StringFormat='Read Time: {0:%m} mins'}"
                                            TextColor="White"/>
