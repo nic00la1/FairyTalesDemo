@@ -23,7 +23,8 @@
                        VerticalOptions="Center"/>
         </Grid>
 
-        <CarouselView Grid.Row="2"
+        <CarouselView IndicatorView="indicatorView"
+            Grid.Row="2"
                       ItemsSource="{Binding FairyTales}"
                       PeekAreaInsets="30">
             <CarouselView.ItemsLayout>
@@ -94,6 +95,16 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
+
+        <IndicatorView x:Name="indicatorView"
+                       Grid.Row="3"
+                       HorizontalOptions="Center"
+                       IndicatorColor="#616161"
+                       IndicatorSize="8"
+                       SelectedIndicatorColor="White"
+                       VerticalOptions="Center">
+            
+        </IndicatorView>
     </Grid>
 
 </ContentPage>
