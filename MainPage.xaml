@@ -157,19 +157,19 @@
                            FontSize="10"
                            HorizontalOptions="Center"
                            Text="Search"
-                           TextColor="White"/>
+                           TextColor="#AC9DB9"/>
                     <Label Grid.Row="1"
                            Grid.Column="2"
                            FontSize="10"
                            HorizontalOptions="Center"
                            Text="Library"
-                           TextColor="White"/>
+                           TextColor="#AC9DB9"/>
                     <Label Grid.Row="1"
                        Grid.Column="3"
                        FontSize="10"
                        HorizontalOptions="Center"
                        Text="Profile"
-                       TextColor="White"/>
+                       TextColor="#AC9DB9"/>
 
                     <Label 
                             FontFamily="Segoe MDL2 Assets"
@@ -184,24 +184,24 @@
         FontSize="20"
         HorizontalOptions="Center"
         Text="&#xE800;"
-        TextColor="White"
-        VerticalOptions="End"/>
+        VerticalOptions="End"
+                           TextColor="#AC9DB9"/>
 
                     <Label Grid.Column="2"
 FontFamily="Segoe MDL2 Assets"
 FontSize="20"
 HorizontalOptions="Center"
 Text="&#xE823;"
-TextColor="White"
-VerticalOptions="End"/>
+VerticalOptions="End"
+                           TextColor="#AC9DB9"/>
 
                     <Label Grid.Column="3"
 FontFamily="Icons"
 FontSize="20"
 HorizontalOptions="Center"
 Text="&#xE801;"
-TextColor="White"
-VerticalOptions="End"/>
+VerticalOptions="End"
+                           TextColor="#AC9DB9"/>
 
                 </Grid>
             </Border>
